@@ -1,0 +1,63 @@
+.logoWrap {
+  width: 200px;
+  height: 28px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
+
+
+  &:hover {
+    .mask {
+      transform: translateX(4px);
+    }
+
+    .name {
+      transform: translateX(-4px);
+    }
+  }
+
+  .mask {
+    pointer-events: none;
+    width: 66px;
+    height: 66px;
+    transition: all 1s;
+  }
+
+  .text {
+    padding-left: 16px;
+    font-size: 1.5em;
+    font-family: Siyuan, Helvetica, Arial, sans-serif;
+    white-space: nowrap;
+    color: #b2bec3;
+    transition: all 1.6s;
+
+
+    .name {
+      color: #2d3436;
+    }
+
+    &:hover {
+      transition: all 1.5s;
+      -webkit-transition: all 1.5s;
+      -moz-transition: all 1.5s;
+      -ms-transition: all 1.5s;
+      -o-transition: all 1.5s;
+      transform: translateX(-6px);
+      -webkit-transform: translateX(-6px);
+      -moz-transform: translateX(-6px);
+      -ms-transform: translateX(-6px);
+      -o-transform: translateX(-6px);
+    }
+  }
+
+}
+
+.mouseleave {
+  transition: all 1.5s;
+  transform: translateX(6px);
+  -webkit-transform: translateX(6px);
+  -moz-transform: translateX(6px);
+  -ms-transform: translateX(6px);
+  -o-transform: translateX(6px);
+}
